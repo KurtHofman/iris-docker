@@ -1,0 +1,22 @@
+{
+    "sqltools.connections": [
+        {
+            "namespace": "USER",
+            "connectionMethod": "Server and Port",
+            "showSystem": false,
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 9092,
+            "askForPassword": false,
+            "driver": "InterSystems IRIS",
+            "name": "iris-docker",
+            "username": "_SYSTEM",
+            "password": "SYS"
+        }
+    ],
+    "objectscript.conn": {
+        "server": "iris-docker",
+        "ns": "USER",
+        "active": true
+    }
+}
