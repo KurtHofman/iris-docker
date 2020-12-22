@@ -3,22 +3,15 @@
         "Dockerfile*": "dockerfile",
         "iris.script": "objectscript"
      },
-     "intersystems.servers": {
-        "local": {
-          "webServer": {
-            "scheme": "http",
-            "host": "localhost",
-            "port": 9092
-          },
-          "description": "IRIS-DOCKER",
-          "username": "_SYSTEM",
-          "password": "SYS"
-        }
-      },
      "objectscript.conn": {
-        "active": true,
-        "server": "local",
-        "ns": "USER"     
+      "server": "docker~iris",
+      "ns": "USER",
+      "active": true,
+      "objectscript.export.folder": "src",
+      "objectscript.serverSideEditing": false,
+      "links": {
+        "Production": "http://localhost:${port}/terminal/?ns=USER",
+      }
     },
     "sqltools.connections": [
         {
