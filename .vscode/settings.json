@@ -16,12 +16,12 @@
         }
       },
      "objectscript.conn": {
-         "server": "docker-iris",
-         "ns": "USER",
-         "active": true,
-         "links": {
-          "Production": "http://localhost:${port}/terminal/?ns=USER",
-         }
+      "server": "docker-iris",
+      "ns": "USER",
+      "active": true,
+      "links": {
+        "Webterminal": "http://localhost:${port}/terminal/?ns=USER",
+      }
     },
     "sqltools.connections": [
         {
