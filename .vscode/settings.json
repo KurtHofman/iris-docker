@@ -34,5 +34,20 @@
             "username": "_SYSTEM",
             "password": "SYS"
         }
+<<<<<<< Updated upstream
     ]
+=======
+    ],
+    "objectscript.conn": {
+        "server": "iris-docker",
+        "ns": "USER",
+        "username": "_SYSTEM",
+        "password": "SYS",
+        "docker-compose": {
+          "service": "iris",
+          "internalPort": 9092
+        },
+        "active": true      
+    }
+>>>>>>> Stashed changes
 }
