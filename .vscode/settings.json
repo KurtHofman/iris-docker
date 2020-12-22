@@ -10,7 +10,7 @@
             "host": "localhost",
             "port": 9092
           },
-          "description": "IRIS-DOCKER",
+          "description": "DOCKER-IRIS",
           "username": "_SYSTEM",
           "password": "SYS"
         }
@@ -19,8 +19,6 @@
          "server": "docker-iris",
          "ns": "USER",
          "active": true,
-         "objectscript.export.folder": "src",
-         "objectscript.serverSideEditing": false,
          "links": {
           "Production": "http://localhost:${port}/terminal/?ns=USER",
          }
@@ -39,20 +37,5 @@
             "username": "_SYSTEM",
             "password": "SYS"
         }
-<<<<<<< Updated upstream
     ]
-=======
-    ],
-    "objectscript.conn": {
-        "server": "iris-docker",
-        "ns": "USER",
-        "username": "_SYSTEM",
-        "password": "SYS",
-        "docker-compose": {
-          "service": "iris",
-          "internalPort": 9092
-        },
-        "active": true      
-    }
->>>>>>> Stashed changes
 }
